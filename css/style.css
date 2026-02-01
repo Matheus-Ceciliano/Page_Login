@@ -112,7 +112,8 @@ body {
 }
 
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="text"] {
     width: 335px;
     height: 39px;
     border: 1px solid var(--color-border-botton);
@@ -122,13 +123,15 @@ input[type="password"] {
 }
 
 input[type="email"]:focus,
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="password"] {
     outline: 0;
     border: 1px solid #000000;
 }
 
 input[type="password"]::placeholder,
-input[type="email"]::placeholder {
+input[type="email"]::placeholder,
+input[type="text"]::placeholder {
     color: var(--color-text-login);
 }
 
@@ -150,6 +153,16 @@ form a {
     text-decoration: none;
     color: var(--color-text-login);
     font-size: 15px;
+}
+
+input[type="checkbox"] {
+    width: 21px;
+    border: var(--color-border-botton);
+}
+
+.termos {
+    display: flex;
+    gap: 7px;
 }
 
 
@@ -202,7 +215,9 @@ form a {
 
 
     input[type="email"],
-    input[type="password"] {
+    input[type="password"],
+    input[type="text"],
+    input[type="text"] {
         width: 365px;
         height: 45px;
         font-size: 13px;
@@ -225,7 +240,8 @@ form a {
 @media (max-width:482px) {
 
     input[type="email"],
-    input[type="password"] {
+    input[type="password"],
+    input[type="text"] {
         width: 315px;
         height: 45px;
         font-size: 13px;
