@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --bg-info: #196aff;
+    --bg-login: #FFFFFF;
+
+    --bg-botton-login: #377dfe;
+    --color-border-botton: #000000;
+
+    --color-text-info: #FFFFFF;
+    --color-text-login: #000;
+
+}
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+.container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+}
+
+
+
+.container .collum_info {
+    flex: 1;
+    background-color: var(--bg-info);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.collum_info .text {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-text-info);
+}
+
+.collum_info .text_h2 {
+    max-width: 525px;
+    font-weight: 700;
+    font-size: 28px;
+    padding-left: 40px;
+    text-align: start;
+
+
+}
+
+.collum_info .text_p {
+    text-align: start;
+    max-width: 525px;
+    font-weight: 400;
+    padding-left: 40px;
+    font-size: 17px;
+    margin-top: 10px;
+
+}
+
+.divp {
+    text-align: start;
+    max-width: 85%;
+}
+
+/*COLUNA LOGIN*/
+
+
+.container .collum_login {
+    flex: 1;
+    color: var(--bg-login);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-login);
+}
+
+.collum_login .text_h1 {
+    align-items: start;
+    justify-content: start;
+    width: 336px;
+    margin-bottom: 10px;
+}
+
+.collum_login form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 335px;
+    height: 39px;
+    border: 1px solid var(--color-border-botton);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus {
+    outline: 0;
+    border: 1px solid #000000;
+}
+
+input[type="password"]::placeholder,
+input[type="email"]::placeholder {
+    color: var(--color-text-login);
+}
+
+input[type="submit"] {
+    width: 335px;
+    height: 33px;
+    background-color: var(--bg-botton-login);
+    border: 1px solid var(--color-border-botton);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 13px;
+    color: var(--color-text-info);
+    border: none;
+
+    font-weight: bold;
+}
+
+form a {
+    text-decoration: none;
+    color: var(--color-text-login);
+    font-size: 15px;
+}
+
+
+/*Responsividade*/
+
+@media (max-width:1113px) {
+
+    .imagem_info img {
+        width: 470px;
+    }
+
+    .collum_info .text_h2 {
+        max-width: 478px;
+        font-size: 26px;
+    }
+
+    .collum_info .text_p {
+        max-width: 478px;
+        font-size: 15px;
+
+
+    }
+
+    .divp {
+        text-align: start;
+        max-width: 85%;
+    }
+
+}
+
+
+@media (max-width:860px) {
+    .container {
+        flex-direction: column;
+        height: 140vh;
+
+    }
+
+    .collum_login {
+        width: 100%;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .collum_info {
+        width: 100%;
+        flex: 1;
+    }
+
+
+    input[type="email"],
+    input[type="password"] {
+        width: 365px;
+        height: 45px;
+        font-size: 13px;
+    }
+
+    input[type="submit"] {
+        width: 365px;
+        height: 38px;
+        font-size: 13px;
+
+    }
+
+    .collum_login .text_h1 {
+
+        width: 336px;
+
+    }
+}
+
+@media (max-width:482px) {
+
+    input[type="email"],
+    input[type="password"] {
+        width: 315px;
+        height: 45px;
+        font-size: 13px;
+    }
+
+    input[type="submit"] {
+        width: 315px;
+        height: 38px;
+        font-size: 13px;
+
+    }
+
+    .collum_login .text_h1 {
+
+        width: 316px;
+
+    }
+
+    .imagem_info img {
+        width: 410px;
+    }
+
+    .collum_info .text_h2 {
+        max-width: 427px;
+        font-size: 26px;
+    }
+
+    .collum_info .text_p {
+        max-width: 427px;
+        font-size: 15px;
+
+
+    }
+
+    .divp {
+        text-align: start;
+        max-width: 95%;
+    }
+
+}
+
+@media (max-width:426px) {
+
+
+
+    .imagem_info img {
+        width: 330px;
+    }
+
+    .collum_info .text_h2 {
+        max-width: 427px;
+        font-size: 18px;
+    }
+
+    .collum_info .text_p {
+        max-width: 427px;
+        font-size: 15px;
+
+
+    }
+
+    .divp {
+        text-align: start;
+        max-width: 95%;
+    }
+
+}
