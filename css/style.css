@@ -168,8 +168,7 @@ input[type="checkbox"] {
 
 /*Responsividade*/
 
-@media (max-width:1290
-       ) {
+@media (max-width:1290px ) {
 
     .imagem_info img {
         width: 470px;
