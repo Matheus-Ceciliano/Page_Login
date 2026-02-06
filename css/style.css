@@ -168,8 +168,11 @@ input[type="checkbox"] {
 
 /*Responsividade*/
 
-@media (max-width: 1290px ) {
+@media (max-width: 1200px ) {
 
+    .imagem_info img {
+        width: 450px;
+    }
  
 
     .collum_info .text_h2 {
