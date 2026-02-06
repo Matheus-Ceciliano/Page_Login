@@ -170,9 +170,7 @@ input[type="checkbox"] {
 
 @media (max-width: 1290px ) {
 
-    .imagem_info img {
-        width: 70px;
-    }
+ 
 
     .collum_info .text_h2 {
         max-width: 478px;
