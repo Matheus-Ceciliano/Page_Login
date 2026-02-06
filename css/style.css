@@ -195,7 +195,7 @@ input[type="checkbox"] {
 }
 
 
-@media (max-width:860px) {
+@media (max-width:900px) {
     .container {
         flex-direction: column;
         height: 140vh;
@@ -235,6 +235,11 @@ input[type="checkbox"] {
 
         width: 336px;
 
+    }
+
+    
+    .imagem_info img {
+        margin-top: 5px;
     }
 }
 
